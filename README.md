@@ -1,5 +1,5 @@
 # Vocabulary-critic sequence training for image captioning
-This repository includes the implementation for [Vocabulary-Wide Credit Assignment for Training Image Captioning Models] (https://ieeexplore.ieee.org/abstract/document/9329055). 
+This repository includes the implementation for [Vocabulary-Wide Credit Assignment for Training Image Captioning Models](https://ieeexplore.ieee.org/abstract/document/9329055). 
 <br>
 ## Requirements 
     *python 3.6
