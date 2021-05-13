@@ -20,6 +20,7 @@ bash test.sh
 ```
 ## Reference
 If you find this repo helpful, please consider citing:
+```
 @article{liu2021vocabulary,
   title={Vocabulary-Wide Credit Assignment for Training Image Captioning Models},
   author={Liu, Han and Zhang, Shifeng and Lin, Ke and Wen, Jing and Li, Jianmin and Hu, Xiaolin},
@@ -29,3 +30,4 @@ If you find this repo helpful, please consider citing:
   year={2021},
   publisher={IEEE}
 }
+```
