@@ -4,6 +4,13 @@ This repository includes the implementation for [Vocabulary-Wide Credit Assignme
 ## Requirements 
     *python 3.6
     *pytorch 1.2
-    *cider (already been added as a submodule)
-    *coco-caption (already been added as a submodule)
+    *cider
+    *coco-caption
 ## Training 
+### Prepare Data
+See details in data/README.md
+### Start Training
+```
+bash train.sh
+```
+See opts.py for the options. (You can download the pretrained models from [here]().)
