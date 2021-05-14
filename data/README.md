@@ -11,3 +11,9 @@ Then preprocess the dataset and get the cache for calculating cider score:
 python scripts/prepro_ngrams.py --input_json data/dataset_coco.json --dict_json data/cocotalk.json --output_pkl data/coco-train --split train
 ```
 Also, you can download the files processed be myself from this [link](https://drive.google.com/file/d/1pB4y6lIaprgTfwN59jQbZ7od9F0pR16H/view?usp=sharing). 
+## Prepare Bottom-Up features
+Download pre-extracted feature from (https://github.com/peteanderson80/bottom-up-attention). You can either download adaptive one or fixed one. We use the ''10 to 100 features per image (adaptive)''
+```
+python script/make_bu_data.py --output_dir data/cocobu
+```
+This will create data/cocobu_fc, data/cocobu_att and data/cocobu_box.
