@@ -160,8 +160,6 @@ def train(opt):
         optimizer = optim.Adam(model.parameters(), lr=opt.learning_rate)
     elif opt.optim == 'sgd' :
         optimizer = optim.SGD(model.parameters(), lr=opt.learning_rate, momentum=opt.momentum)
-    elif opt.optim == 'adarandom' :
-        optimizer = AdaRandom(model.parameters(), lr=opt.learning_rate)
     else :
         print('this optim is not supported...')
     optimizer.zero_grad()
