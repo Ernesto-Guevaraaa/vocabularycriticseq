@@ -6,4 +6,4 @@ This file provides preprocessed captions and also standard train-val-test splits
 ```
 python scripts/prepro_labels.py --input_json data/dataset_coco.json --output_json data/cocotalk.json --output_h5 data/cocotalk
 ```
-Also, you can download these files from the [link](https://drive.google.com/file/d/1nHBBjOkATSPYiFvenIEX_hEYhGOiwVRO/view?usp=sharing) 
+Also, you can download the files processed be myself from this [link](https://drive.google.com/file/d/1pB4y6lIaprgTfwN59jQbZ7od9F0pR16H/view?usp=sharing). 
