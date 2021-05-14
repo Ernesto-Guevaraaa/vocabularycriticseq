@@ -2,8 +2,10 @@
 This repository includes the implementation for [Vocabulary-Wide Credit Assignment for Training Image Captioning Models](https://ieeexplore.ieee.org/abstract/document/9329055). 
 <br>
 ## Requirements 
-    *python 3.6
-    *pytorch 1.2
+    *python 2.7
+    *pytorch 1.0
+    *gensim
+    *scipy
     *cider
     *coco-caption
 ## Training 
