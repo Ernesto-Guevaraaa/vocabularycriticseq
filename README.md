@@ -13,7 +13,7 @@ See details in data/README.md
 ```
 bash train.sh
 ```
-See opts.py for the options. (You can download the pretrained models from [here](https://drive.google.com/file/d/19rZ23UrEayb-ccreAoDTQ_Pksjap0h9O/view?usp=sharing).)
+See opts.py for the options. (You can download the pretrained [Up-Down](https://arxiv.org/abs/1707.07998) model with VCST from [here](https://drive.google.com/file/d/19rZ23UrEayb-ccreAoDTQ_Pksjap0h9O/view?usp=sharing).)
 ### Evaluation
 ```
 bash test.sh
