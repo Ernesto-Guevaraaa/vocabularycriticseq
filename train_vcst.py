@@ -22,7 +22,6 @@ import gc
 
 import opts
 import models
-#from dataloader_t import MyDataLoader
 from dataloader import *
 import eval_utils
 import misc.utils as utils
