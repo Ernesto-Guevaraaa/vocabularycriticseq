@@ -12,16 +12,16 @@ att_num=100
 epoch=300
 tar_metric=CIDEr
 old_id=val_1255
-id=n1_cider_1
+id=train
 if [ ! -d "log/$id"  ]; then
     mkdir log/$id
 fi
 export PYTHONPATH=coco-caption
 
 CUDA_VISIBLE_DEVICES=0 python \
-    -u train_wcst.py --id $id --caption_model $model --drop_prob_lm $dropout \
+    -u train_vcst.py --id $id --caption_model $model --drop_prob_lm $dropout \
     --start_from  log/${old_id} --old_id ${old_id} \
-    --annFile /data/coco/captions_trainval2014.json \
+    --annFile data/coco/captions_trainval2014.json \
     --seed $seed \
     --optim adam \
     --dataset_ix_start -1 --dataset_ix_end -1 \
@@ -29,12 +29,12 @@ CUDA_VISIBLE_DEVICES=0 python \
     --use_img 0 --use_topic 0 --use_fc 1\
     --start_from_best 1 \
     --rnn_size $rnn_size --num_layers $num_layers \
-    --input_json /data/coco/coco_meta2.json \
+    --input_json data/coco/cocotalk.json \
     --att_feat_num ${att_num} \
-    --input_fc_dir /data/coco/bottom-up-data/fc_bottom_up \
-    --input_att_dir /data/coco/bottom-up-data/att_bottom_up \
-    --input_label_h5 /data/coco/coco_label2.h5 \
-    --cached_tokens /data/coco/coco-all2-idxs \
+    --input_fc_dir data/coco/bottom-up-data/fc_bottom_up \
+    --input_att_dir data/coco/bottom-up-data/att_bottom_up \
+    --input_label_h5 data/coco/cocotalk_label.h5 \
+    --cached_tokens data/coco/coco-all2-idxs \
     --batch_size $batch_size --iter_times $iters --gpu_num $gpu_num \
     --fix_rnn 0 --learning_rate 5e-5 --learning_rate_decay_start -1 \
     --learning_rate_decay_every 4 --learning_rate_decay_rate 0.8 \
